@@ -5,7 +5,7 @@ import streamlit as st
 # Start the Flask app
 def start_flask():
     # Use subprocess to start the Flask app
-    flask_process = subprocess.Popen(["python", "flask_app.py"])
+    flask_process = subprocess.Popen(["python", "trumpgpt.py"])
     return flask_process
 
 # Run the Flask app
