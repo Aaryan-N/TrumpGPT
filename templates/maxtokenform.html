@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <style>
+        body {
+            background: #2C3E50;
+            font-family: "Roboto Light", "Ubuntu Light", "Ubuntu", monospace;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #label {
+            color: #FFD700;
+            font-size: x-large;
+            margin-bottom: 20px;
+        }
+
+        #labelseperator {
+            background: #A9A9A9;
+            color: #A9A9A9;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #formbox {
+            border: 2px solid #FFD700;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        #formsubmit {
+            background: #FF4500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #formsubmit:hover {
+            background: #FF6347; /* Slightly lighter red for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" id="form">
+        <h1 id="label">Enter the amount of tokens (characters) that you want the tweet to be!</h1>
+        <hr id="labelseperator"/>
+        <label>
+            <input name="tokens" type='number' id="formbox">
+        </label>
+        <input type="submit" id="formsubmit">
+    </form>
+</body>
+</html>

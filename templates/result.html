@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <style>
+        body {
+            background: #2C3E50;
+            font-family: "Roboto Light", "Ubuntu Light", "Ubuntu", monospace;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #tweetcontainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #tweetlabel {
+            color: #FFD700;
+            font-size: x-large;
+            margin-bottom: 20px;
+        }
+
+        #tweetseperator {
+            background: #A9A9A9;
+            color: #A9A9A9;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #result {
+            color: #E0E0E0;
+            padding-top: 7px;
+            padding-bottom: 20px;
+            font-size: large;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .returnbutton {
+            background: #FF4500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .returnbuttonbox {
+            padding: 10px 20px;
+            border-radius: 12px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="tweetcontainer">
+    <h1 id="tweetlabel">A fresh tweet as Donald J. Trump would write it! (AI Generated)</h1>
+    <hr id="tweetseperator"/>
+    <div id="result">
+    {{ result }}
+    </div>
+    <a href="/" class="returnbuttonbox">
+    <button class="returnbutton">Head Back</button>
+    </a>
+</div>
+</body>
+</html>
