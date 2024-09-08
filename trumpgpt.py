@@ -1,7 +1,8 @@
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_from_directory
+import os
 
 app = Flask(__name__)
 
@@ -10,6 +11,9 @@ app = Flask(__name__)
 def request_check():
     return render_template('maxtokenform.html')
 
+@app.route('/favicon.ico')
+def fav():
+    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico')
 
 batch_size = 16  # Amount of tokens in a batch
 block_size = 34  # Amount of batches in a block as per my understanding
