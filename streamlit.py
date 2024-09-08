@@ -1,7 +1,7 @@
 import streamlit as st
 
 # URL of the Flask app
-flask_app_url = "http://127.0.0.1:5000"
+flask_app_url = "http://localhost:8080"
 
 st.set_page_config(layout="wide")
 st.title("TrumpGPT")
