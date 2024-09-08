@@ -26,7 +26,7 @@ n_head = 4
 n_layer = 4
 dropout = 0.0
 
-with open('donaldfinaldataset.txt', 'r', encoding='utf-8') as f:
+with open('fulltrumptweetsutf.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 len(text)
 
