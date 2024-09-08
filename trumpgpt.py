@@ -203,10 +203,10 @@ def generatedtweets():
     if request.method == 'POST':
         max_tokens = request.form['tokens']
         max_tokens = int(max_tokens)
-        print(max_tokens)
         generatedresult = decode(m.generate(context, max_new_tokens=max_tokens)[0].tolist())
         return render_template('result.html', result=generatedresult)
 
 
 if __name__ == "__main__":
-    app.run()
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
