@@ -31,7 +31,3 @@ st.markdown("""
 st.components.v1.html(f"""
     <iframe src="{flask_app_url}" width="100%" height="100%" style="position: fixed; top: 0; left: 0; bottom: 0; right: 0; border: none;"></iframe>
 """, height=0)
-
-if st.button("Stop Flask Server"):
-    flask_process.terminate()
-    st.write("Flask server stopped.")
